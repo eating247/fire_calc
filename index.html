@@ -2,24 +2,37 @@
 <html>
 <head>
   <title>FIRE</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+          
   <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
 
+
+
+<div class="container center-align">
   <div id="fire">
     <h1>{{message}}</h1>
     <label>Annual Expenses</label>
     <input type="number" v-model="expenses">
 
 
-    <button v-on:click="calculate">How much do I need to save to retire?</button>
+    <button class="waves-effect waves-light btn-large" v-on:click="calculate">How much do I need to save to retire?</button>
 
     <!-- <h1>{{expenses * 25}}</h1> -->
 
     <h1>{{calc}}</h1>
 
 
-  </div>
+  </div>  
+</div>
+
+
 
   <script type="text/javascript" src="app.js"></script>
 </body>
